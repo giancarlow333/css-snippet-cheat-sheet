@@ -2,6 +2,7 @@
 :root {
     --dark: violet;
     --light: white;
+    --darker: navy;
 }
 
 /* Base styles */
@@ -10,6 +11,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--dark);
     color: var(--light);
 }
@@ -17,10 +20,29 @@ body {
 /* Header styles */
 header {
     text-align: center;
+    background-color: var(--darker);
+    padding: 50px;
+}
+
+/* Main styles */
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.card {
+    width: 300px;
+    border: 3px dashed white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1%;
 }
 
 /* Footer styles */
 footer {
     text-align: center;
     font-size: smaller;
+    padding: 25px;
+    background-color: var(--darker);
 }
