@@ -24,6 +24,10 @@ header {
     padding: 50px;
 }
 
+h1 {
+    font-size: 200%;
+}
+
 /* Main styles */
 main {
     display: flex;
@@ -33,12 +37,19 @@ main {
     padding: 50px;
 }
 
+/* Card styles -- snippets go here */
 .card {
     width: 300px;
     border: 3px dashed white;
     border-radius: 10px;
     text-align: center;
     padding: 1%;
+}
+
+.card h2 {
+    font-size: 150%;
+    padding: 3%;
+    border: 1px solid white;
 }
 
 /* Footer styles */
