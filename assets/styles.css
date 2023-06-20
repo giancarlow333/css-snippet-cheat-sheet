@@ -90,6 +90,11 @@ pre, code {
     box-shadow: inset 0px 0px 8px var(--light), 0 0 15px var(--light);
 }
 
+/* Select .card-code contents on click */
+.card-code:active {
+    user-select: all;
+}
+
 /* Footer styles */
 footer {
     display: flex;
