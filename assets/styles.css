@@ -81,6 +81,15 @@ pre, code {
     tab-size: 2;
 }
 
+/* Make .card-code glow */
+.card-code {
+    transition: all 0.5s ease-in-out;
+}
+
+.card-code:hover {
+    box-shadow: inset 0px 0px 8px var(--light), 0 0 15px var(--light);
+}
+
 /* Footer styles */
 footer {
     display: flex;
