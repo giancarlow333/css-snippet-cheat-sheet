@@ -7,7 +7,7 @@
 
 /* Base styles */
 * {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
 
 /* Header styles */
 header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     background-color: var(--darker);
     padding: 50px;
