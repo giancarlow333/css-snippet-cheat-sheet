@@ -3,6 +3,7 @@
     --dark: violet;
     --light: white;
     --darker: navy;
+    --text-color: blue;
 }
 
 /* Base styles */
@@ -40,6 +41,9 @@ main {
 
 /* Card styles -- snippets go here */
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
     width: 300px;
     border: 3px dashed white;
     border-radius: 10px;
@@ -49,6 +53,9 @@ main {
 .card h2 {
     font-size: 150%;
     padding: 3%;
+    position: relative;
+    margin-top: -20px;
+    background-color: var(--dark);
     text-align: center;
     border: 1px solid white;
 }
@@ -56,8 +63,8 @@ main {
 /* Descriptive text for the card */
 .card-descrip {
     text-align: left;
-    color: blue;
-    margin-bottom: 1em;
+    color: var(--text-color);
+    margin-bottom: 1em; /* Based on <p> from w3schools.com */
 }
 
 /* container for the actual code snippet */
