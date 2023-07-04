@@ -77,6 +77,7 @@ main {
 .card-code {
     background: linear-gradient(#e66465, #9198e5);
     padding: 15px;
+    user-select: all;
 }
 
 pre, code {
