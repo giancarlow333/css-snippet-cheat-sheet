@@ -95,17 +95,16 @@ pre, code {
 }
 
 /* Make .card-code glow */
+/* Select .card-code contents on click */
 .card-code {
     transition: all 0.5s ease-in-out;
+    user-select: all;
+    -moz-user-select: all;
+    -webkit-user-select: all;
 }
 
 .card-code:hover {
     box-shadow: inset 0px 0px 8px var(--lighter), 0 0 15px var(--darker);
-}
-
-/* Select .card-code contents on click */
-.card-code:active {
-    user-select: all;
 }
 
 /* Footer styles */
