@@ -25,8 +25,8 @@ body {
 header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--darker);
+    color: var(--lighter);
     padding: 50px;
 }
 
@@ -58,6 +58,7 @@ main {
     border: 3px dashed var(--darker);
     border-radius: 10px;
     padding: 20px;
+    margin: 20px;
 }
 
 .card h2 {
@@ -99,7 +100,7 @@ pre, code {
 }
 
 .card-code:hover {
-    box-shadow: inset 0px 0px 8px var(--light), 0 0 15px var(--light);
+    box-shadow: inset 0px 0px 8px var(--lighter), 0 0 15px var(--darker);
 }
 
 /* Select .card-code contents on click */
@@ -115,4 +116,5 @@ footer {
     font-size: smaller;
     padding: 25px;
     background-color: var(--darker);
+    color: var(--lighter);
 }
