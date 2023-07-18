@@ -1,9 +1,12 @@
 /* CSS variables */
 :root {
-    --dark: violet;
-    --light: white;
-    --darker: navy;
-    --text-color: blue;
+    --base-color: #87CFFA;
+    --light: #B6E3FD;
+    --lighter: #F5FBFF;
+    --dark: #3AA6E6;
+    --darker: #067CC3;
+    --darkest: #43677d;
+    --text-color: #43677d;
 }
 
 /* Base styles */
@@ -14,15 +17,16 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--lighter);
+    color: var(--darkest);
 }
 
 /* Header styles */
 header {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: var(--darker);
+    background-color: var(--dark);
+    color: var(--light);
     padding: 50px;
 }
 
@@ -51,7 +55,7 @@ main {
     flex-direction: column;
     justify-content: initial;
     width: 300px;
-    border: 3px dashed white;
+    border: 3px dashed var(--darker);
     border-radius: 10px;
     padding: 20px;
 }
@@ -62,6 +66,7 @@ main {
     position: relative;
     margin-top: -40px;
     background-color: var(--dark);
+    color: var(--lighter);
     text-align: center;
     border: 1px solid white;
 }
@@ -75,7 +80,7 @@ main {
 
 /* container for the actual code snippet */
 .card-code {
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(var(--dark), var(--darkest));
     padding: 15px;
 }
 
@@ -85,6 +90,7 @@ pre, code {
     white-space: pre-wrap;
     overflow-x: auto;
     tab-size: 2;
+    color: var(--lighter);
 }
 
 /* Make .card-code glow */
