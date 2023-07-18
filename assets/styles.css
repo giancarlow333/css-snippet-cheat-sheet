@@ -83,6 +83,7 @@ main {
 .card-code {
     background: linear-gradient(var(--dark), var(--darkest));
     padding: 15px;
+    user-select: all;
 }
 
 pre, code {
